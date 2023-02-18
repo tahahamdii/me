@@ -1,0 +1,73 @@
+.services_container {
+    display: grid;
+    grid-template-columns: 50% 63%;
+    gap: 12%;
+    background-image: url(../../assets/back.png);
+
+    }
+
+
+    .about_cardss {
+        margin : 3rem 0 1.5rem ;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15.5rem
+        
+        
+    }
+    .card.about_services {
+        text-align: center;
+        width: 20rem;
+        height: 30rem;
+        font-weight: 500;
+        
+        
+    }
+    .about_services-icon {
+        font-size: 1.3rem;
+        color: black;
+        border-radius: 3rem;
+        width: fit-content;
+        margin-inline: auto;
+        padding: 0.6rem;
+        display: flex;
+        align-items: center;
+        transition: var(--transition);
+    }
+    .card.about_services:hover
+     .about_services-icon {
+        background: var(--color-primary) ;
+        color: var(--color-white);
+    }
+    .card.about_services h5 {
+        margin: 3rem 1rem;
+        text-align: center;
+    }
+   .about_center{
+    width: 20rem;
+   }
+   
+
+    @media screen and (max-width: 1024px) {
+      
+        .about_cardss {
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            }
+        .h2 {
+        text-align: center;
+        }
+        }
+    
+        /* MEDIA QUERIES (phones) */
+   
+        @media screen and (max-width: 600px) {
+            .about_cardss {
+            grid-template-columns: 1fr  ;
+            margin : 3rem 0 1.5rem ;
+
+            gap: 1rem;
+            
+            }
+        }
+    
